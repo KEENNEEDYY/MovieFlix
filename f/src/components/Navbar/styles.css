@@ -1,0 +1,50 @@
+.nav-button button{
+    border: 1px solid black;
+}
+
+.nav-btn{
+    height: 30px;
+    width: 100px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.nav-btn p{
+    text-align: center;
+    margin: -4% -4%;
+}
+
+.main-nav{
+    height: 68px;
+}
+
+.main-nav h4{
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+
+.nav-button{
+    margin-right: 18px;
+}
+
+@media (min-width: 576px) {
+    .main-nav h4{
+        padding-left: 28px;
+    }
+    .nav-button{
+        margin-right: 28px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .main-nav h4{
+        padding-left: 31px;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .main-nav h4{
+        padding-left: 49px;
+    }    
+}

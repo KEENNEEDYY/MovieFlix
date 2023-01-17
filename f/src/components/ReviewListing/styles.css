@@ -1,0 +1,11 @@
+.reviewlisting-container{
+    margin-top: 1.85vh;
+
+    min-width: 300px;
+    max-width: 1127px;
+
+    text-align: left;
+    background-color: #6C6C6C;
+    border-radius: 6px;   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
