@@ -1,31 +1,97 @@
-.theme-color-default h5{
-    margin: 15px 12px 0 12px;
-    font-size: 22px;
+.main-container{
+    padding-bottom: 10px;
+}
+
+.movie-listing-top-container.base-card{
+    height: 60px;
+    width: auto;
+    min-width: 300px;
+    max-width: 300px;
+    margin: unset;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    margin-right: 10px;
+    text-align: left;
+    padding-top: 0.01vh;
+}
+
+.theme-color-default p{
+    
+    padding-top: calc( ( 60px - 30px ) * 1/2 );
     height: 33px;
     letter-spacing: -0.015em;
 }
 
 .list-container{
-    margin-top: 49px;
+    margin-top: 20px;
+    padding: 0px;
 }
 
-.list-container p{
-    margin-bottom: 12px;
-    margin-left: 18px;
+.listing2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.base-card.movie-card{
+    margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+    .movie-listing-top-container.base-card{
+        display: block;
+        text-align: left;
+        margin-left: 18px;
+        margin-right: 20px;
+        max-width: 536px;
+    }
+    .theme-color-default p {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .movie-listing-top-container.base-card{
+        margin-left: 36px;
+        margin-right: 40px;
+        margin-top: 40px;
+        width: 689px;
+        max-width: 689px;
+    }
+}
+
+@media (min-width: 992px) {
+    .movie-listing-top-container.base-card{
+        width: 916px;
+        max-width: 1122px;
+    }
+    
 }
 
 @media (min-width: 1200px) {
-    .theme-color-default h5{
-        font-size: 48px;    
-        margin: 41px 513px 0 40px;
-    }
 
     .list-container{
-        margin-top: 39px;
+        margin-left: 0px;
     }
 
-    .list-container p{
-        margin-bottom: 27px;
+    .movie-listing-top-container.base-card{
+        margin-top: 42px;
+        margin-right: 40px;
         margin-left: 40px;
+        width: 1222px;
+        height: 80px;
+        padding: none;
     }
+    
+}
+
+@media (min-width: 1400px) {
+
+    .theme-color-default{
+        margin-left: 100px;
+        margin-right: 100px;
+    }    
 }

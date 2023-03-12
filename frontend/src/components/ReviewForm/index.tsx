@@ -1,9 +1,11 @@
 import {useState} from 'react';
-import Button from 'components/Button';
-import './styles.css';
 import { AxiosRequestConfig } from 'axios';
+import {  toast } from 'react-toastify';
 import { requestBackend } from 'util/requests';
 import { Review } from 'types/review';
+import Button from 'components/Button';
+
+import './styles.css';
 
 type FormData = {
     text: string;
@@ -44,10 +46,10 @@ const ReviewForm = ({movieId, onInsertReview}: Props) => {
 
         requestBackend(params).then((response) => {
             onInsertReview(response.data);
-            console.log("SALVO COM SUCESSO ", response.data);
+            toast.success('Review salva com sucesso!')
         })
         .catch(error => {
-            console.log("ERRO AO SALVAR", error);
+            toast.error('Review em branco: Erro ao salvar a review!')
         })
         clearForm();
     };
